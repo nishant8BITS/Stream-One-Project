@@ -1,0 +1,21 @@
+ <section class="container" data-ng-controller="SignInCtrl">
+			 <div class="row"> 
+                 <div class="col-sm-12 box">			 
+					     <h3 class="h5_a">Sign In To Your Account</h3>
+						 <hr>
+				        <form class="form-group" action="/" id="sign_in">		 
+						      <h4 class="h5_a">I have an account</h4>
+						      <h4 class="h5_a">Your Email Address</h4>
+						     <input type="email" data-ng-model="userEmail" placeholder="Enter Email"  class="form-control input_box"/>
+						     <h4 class="h5_a">Your Password</h4>
+						     <input type="password" data-ng-model="password" placeholder="Enter Password" class="form-control input_box"/>
+					
+					      <hr>
+					     <button type="submit" ng-click="submit()"class="btn btn-default sign_button" >
+					      <a href="#" >Sign In</a>
+					      </button>
+                       			  
+			     </form>
+                 </div>     
+             </div>      
+		 </section> 

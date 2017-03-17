@@ -1,0 +1,51 @@
+<section class="container" data-ng-controller="CreateAccountCtrl">
+			 <div class="row"> 
+                 <div class="col-sm-12 box">		
+			     <form class="form-group">
+				   
+					     <h3 class="h5_a">Create An Account</h3>
+						 <hr>	
+                         
+                           					  
+						 <h4 class="h5_a">Personal Details</h4>
+						 <h5 class="h5_a">Title:<span class="alert">*</span></h5>
+						   <select list="title" name="title" class="h5_a" data-ng-model="title">
+						            <option value selected="selected">Select a title </option>
+                                       <option value="Mr">Mr</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Ms">Ms</option>
+										<option value="Dr">Dr</option>
+										
+     
+                            </select>
+	                		
+                          <h5 class="h5_a">First Name:<span class="alert">*</span></h5>
+						 
+                         <input type="text"  placeholder="First Name" required="" class="form-control input_box" data-ng-model="firstName" />
+                          
+                           <h5 class="h5_a">Last Name:<span class="alert">*</span></h5>
+                          <input type="text"  placeholder="Last Name" required="" class="form-control input_box" data-ng-model="lirstName">
+                            <hr>
+                           <h4 class="h5_a">Contact Details</h4>
+						   <h5 class="h5_a">Email Address:<span class="alert">*</span></h5>
+						 <input type="email" name="email" placeholder="Enter Email" class="form-control input_box"  required="" data-ng-model="userEmail"/>
+						  <h5 class="h5_a"> Confirm Email Address:<span class="alert">*</span></h5>
+						 <input type="email" name="email" placeholder="Enter Email" class="form-control input_box"  required="" data-ng-model="userEmail"/>
+						 
+						 <h5 class="h5_a">Contact Number:<span class="alert">*</span></h5>
+						 <input type="tel" name="contact_number" placeholder="contact number" class="form-control input_box"  required="" data-ng-model="userTel"/>
+						 
+						 <h5 class="h5_a">Your Password:<span class="alert">*</span></h5>
+						 <input type="password" name="password" placeholder="Enter Password" class="form-control input_box"  required="" data-ng-model="password"/>
+					      <hr>
+					  
+					  <button type="submit" data-ng-click="createAccount()"class="btn btn-default sign_button" >
+					      <a href="#" >Create An Account</a>
+					  </button><br>
+                       			  
+			     </form>
+				</div> 
+			</div>
+         </section>			
+                      
