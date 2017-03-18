@@ -1,14 +1,11 @@
-(function() {
-    'use strict';
-
-    angular
-        .module('TinuaFashionApp')
-        .controller('SignInCtrl', SignInCtrl);
-
-    SignInCtrl.$inject = ['$scope'];
-
-    /* @ngInject */
-    function SignInCtrl($scope) {
-
-    }
-})();
+TinuaFashionApp.controller( 'SignInCtrl', function($scope,$location){
+				 $scope.submit = function(){
+					 var uemail = $scope.userEmail;
+					 var password = $scope.password;
+					 if($scope.uemail == 'admin' && scope.password == 'admin'){
+						 $location.path('/dashbord');
+					 }
+					 
+				 };
+				 
+				  });
